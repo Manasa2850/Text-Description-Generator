@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="main.css">
+    https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js
+  </head>
+  <body>
+    <center>
+    <div class="h1">
+      <h2>UPLOAD FILES</h2>
+    </div>
+    <div class="input">
+    <form method="post" enctype="multipart/form-data" action="/oidea/upload">
+    <select id="choice" name="choice">
+    <option value="multiimg">Upload Multiple Images</option>
+    <option value="singleimg">Upload Single Image</option>
+    <option value="OCR">Recognize Text</option>
+    </select>
+    <hr>
+      <input placeholder="Drag the file to be uploaded" id="file" name="file" type="file"></input>
+      <input type="submit">upload</input>
+      </form>
+    </div>
+   </center>
+   <a href="home.html">Back</a>
+  </body>
+</html>
